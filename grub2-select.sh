@@ -36,7 +36,7 @@ echo $old_default
 echo -en "\nPlease select your option: "
 read option
 
-if [ $option -lt 1 ] || [ $option -ge $entries_count ]
+if [ $option -lt 1 ] || [ $option -gt $entries_count ]
 then
 	echo -e "Invalid option\n"
 	exit
